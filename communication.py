@@ -145,8 +145,7 @@ def receive_message():
                 if not data:
                     exit = True
                 else:
-                    print("Message successfully sent.")
-                    print("Message:\n")
+                    print("\nMessage:")
                     print(data.decode(), end="#")
                     print("\nEnd of message.\n")
                 conn.sendall(ACK_TEXT.encode("utf-8"))
